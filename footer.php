@@ -22,7 +22,7 @@
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'galaxia' ), 'galaxia', '<a href="https://automattic.com/">webvitaly</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'galaxia' ), 'galaxia', '<a href="http://codecraft.universio.net/">webvitaly</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

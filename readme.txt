@@ -13,7 +13,7 @@ A starter theme called Galaxia.
 
 == Description ==
 
-Description
+Responsive and clean WordPress theme
 
 == Installation ==
 
