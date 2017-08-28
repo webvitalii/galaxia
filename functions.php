@@ -7,6 +7,7 @@
  * @package Galaxia
  */
 
+define('GALAXIA_THEME_VERSION', '0.1');
 
 if ( ! function_exists( 'galaxia_setup' ) ) :
 	/**
