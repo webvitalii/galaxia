@@ -7,6 +7,7 @@
  * @package Galaxia
  */
 
+
 if ( ! function_exists( 'galaxia_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -117,11 +118,14 @@ add_action( 'widgets_init', 'galaxia_widgets_init' );
  * Enqueue scripts and styles.
  */
 function galaxia_scripts() {
+
+	wp_enqueue_style( 'galaxia-flexify-style', get_template_directory_uri() . '/css/flexify.css', array(), GALAXIA_THEME_VERSION, 'all' );
+
 	wp_enqueue_style( 'galaxia-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'galaxia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'galaxia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), GALAXIA_THEME_VERSION, true );
 
-	wp_enqueue_script( 'galaxia-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'galaxia-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), GALAXIA_THEME_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -148,10 +152,3 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
