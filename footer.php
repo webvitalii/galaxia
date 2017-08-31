@@ -8,7 +8,6 @@
  *
  * @package Galaxia
  */
-
 ?>
 
 	</div><!-- #content -->
@@ -26,7 +25,9 @@
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+
+</div><!-- .fx-container .fx-container-lg .site-container -->
+</div><!-- #page .site -->
 
 <?php wp_footer(); ?>
 

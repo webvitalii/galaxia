@@ -22,35 +22,31 @@
 
 <body <?php body_class('fx-wrap'); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'galaxia' ); ?></a>
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'galaxia' ); ?></a>
+<div class="fx-container fx-container-lg site-container">
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+			<?php the_custom_logo();  ?>
+            <h3 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
 			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
+                <h4 class="site-description"><?php echo $description; ?></h4>
+			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'galaxia' ); ?></button>
-			<?php
+			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php /*esc_html_e( 'Primary Menu', 'galaxia' ); */?></button>-->
+			<div class="fx-menu fx-menu-dark fx-bg-gray-darkest">
+            <?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
+					'menu_id' => 'primary-menu',
 				) );
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+            </div><!-- .fx-menu -->
+		</nav><!-- #site-navigation .main-navigation -->
+	</header><!-- #masthead .site-header -->
 
 	<div id="content" class="site-content">
