@@ -1,13 +1,4 @@
-<?php
-/**
- * The template for displaying archive pages
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package Galaxia
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<div id="primary" class="content-area fx-col-sm-9">
 		<main id="main" class="site-main">

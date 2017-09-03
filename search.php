@@ -1,13 +1,4 @@
-<?php
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package Galaxia
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<section id="primary" class="content-area fx-col-sm-9">
 		<main id="main" class="site-main">

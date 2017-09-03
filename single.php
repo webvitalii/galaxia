@@ -1,19 +1,10 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package Galaxia
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<div id="primary" class="content-area fx-col-sm-9">
 		<main id="main" class="site-main">
 
 		<?php
-		while ( have_posts() ) : the_post();
+		while ( have_posts() ) : the_post(); // the loop
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
@@ -24,7 +15,7 @@ get_header(); ?>
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.
+		endwhile;
 		?>
 
 		</main><!-- #main -->
