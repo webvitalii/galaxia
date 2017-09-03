@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="primary" class="content-area fx-col-sm-9">
-		<main id="main" class="site-main">
+<?php get_template_part( 'template-parts/wrap-content', 'before' ); ?>
 
 		<?php
 		while ( have_posts() ) : the_post(); // the loop
@@ -18,9 +17,7 @@
 		endwhile;
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<?php get_template_part( 'template-parts/wrap-content', 'after' ); ?>
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_sidebar(); ?>
+<?php get_footer();
