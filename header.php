@@ -14,6 +14,3 @@
 <div class="fx-container fx-container-lg site-container">
 
 <?php get_template_part( 'template-parts/header', 'menu' ); ?>
-
-	<div id="content" class="site-content">
-        <div class="fx-row">

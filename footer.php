@@ -1,6 +1,5 @@
 
-        </div><!-- .fx-row -->
-	</div><!-- #content .site-content -->
+
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">

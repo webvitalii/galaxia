@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<?php get_template_part( 'template-parts/wrap-content-sidebar', 'before' ); ?>
 <?php get_template_part( 'template-parts/wrap-content', 'before' ); ?>
 
 			<section class="error-404 not-found">
@@ -17,6 +18,6 @@
 			</section><!-- .error-404 -->
 
 <?php get_template_part( 'template-parts/wrap-content', 'after' ); ?>
-
 <?php get_sidebar(); ?>
+<?php get_template_part( 'template-parts/wrap-content-sidebar', 'after' ); ?>
 <?php get_footer();

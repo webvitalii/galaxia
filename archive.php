@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<?php get_template_part( 'template-parts/wrap-content-sidebar', 'before' ); ?>
 <?php get_template_part( 'template-parts/wrap-content', 'before' ); ?>
 
 		<?php
@@ -28,6 +29,6 @@
 		endif; ?>
 
 <?php get_template_part( 'template-parts/wrap-content', 'after' ); ?>
-
 <?php get_sidebar(); ?>
+<?php get_template_part( 'template-parts/wrap-content-sidebar', 'after' ); ?>
 <?php get_footer();
