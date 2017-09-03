@@ -13,4 +13,7 @@
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'galaxia' ); ?></a>
 <div class="fx-container fx-container-lg site-container">
 
-<?php get_template_part( 'template-parts/header', 'menu' ); ?>
+    <header id="masthead" class="site-header">
+<?php get_template_part( 'template-parts/header', 'branding' ); ?>
+<?php get_template_part( 'template-parts/header', 'navigation' ); ?>
+    </header><!-- #masthead .site-header -->
