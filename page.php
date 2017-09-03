@@ -4,7 +4,7 @@
 		<main id="main" class="site-main">
 
 			<?php
-			while ( have_posts() ) : the_post();
+			while ( have_posts() ) : the_post(); // the loop
 
 				get_template_part( 'template-parts/content', 'page' );
 
@@ -13,7 +13,7 @@
 					comments_template();
 				endif;
 
-			endwhile; // End of the loop.
+			endwhile;
 			?>
 
 		</main><!-- #main -->
