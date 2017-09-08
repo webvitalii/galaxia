@@ -4,8 +4,6 @@ to-do:
 * featured image
 * footer copyright
 * footer widgets
-* rename menu handler
-* rename sidebar handler
 
 ==========
 future:

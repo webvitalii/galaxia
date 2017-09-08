@@ -6,12 +6,14 @@ it's just a matter of overwriting all the horizontal positioning attributes
 of your CSS stylesheet in a separate stylesheet file named rtl.css.
 
 https://codex.wordpress.org/Right-to-Left_Language_Support
-
 */
 
-/*
 body {
-	direction: rtl;
-	unicode-bidi: embed;
+    direction: rtl;
+    unicode-bidi: embed;
 }
-*/
+caption,
+th,
+td {
+    text-align: right;
+}
