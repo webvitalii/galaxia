@@ -7,3 +7,4 @@ to-do:
 
 ==========
 future:
+* [option] load Bootstrap from CDN
