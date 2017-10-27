@@ -12,7 +12,9 @@
 					printf( esc_html__( 'Search Results for: %s', 'galaxia' ), '<span>' . get_search_query() . '</span>' );
 				?></h1>
 			</header><!-- .page-header -->
-
+			
+			<?php get_search_form(); ?>
+			
 			<?php
 			while ( have_posts() ) : the_post(); // the loop
 

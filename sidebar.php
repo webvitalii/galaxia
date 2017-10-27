@@ -4,7 +4,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area fx-col-sm-3">
+<aside id="secondary" class="widget-area col-sm-3">
 	<?php //dynamic_sidebar( 'sidebar-1' ); ?>
 
 	<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : // sidebar right widgetized area ?>

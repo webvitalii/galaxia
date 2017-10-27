@@ -8,10 +8,9 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('fx-wrap'); ?>>
 <div id="page" class="site">
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'galaxia' ); ?></a>
-<div class="fx-container fx-container-lg site-container">
+<div class="container-fluid site-container">
 
     <header id="masthead" class="site-header">
 <?php get_template_part( 'template-parts/header', 'branding' ); ?>

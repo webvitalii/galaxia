@@ -15,7 +15,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
-</div><!-- .fx-container .fx-container-lg .site-container -->
+</div><!-- .container-fluid .site-container -->
 </div><!-- #page .site -->
 
 <?php wp_footer(); ?>

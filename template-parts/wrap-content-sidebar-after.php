@@ -1,3 +1,3 @@
 
-        </div><!-- .fx-row -->
+        </div><!-- .row -->
     </div><!-- #content .site-content -->
