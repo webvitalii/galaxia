@@ -114,8 +114,6 @@ function galaxia_scripts() {
 
 	wp_enqueue_style( 'galaxia-bootstrap-style', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css', array(), GALAXIA_THEME_VERSION, 'all' );
 
-	wp_enqueue_style( 'galaxia-flexify-style', get_template_directory_uri() . '/assets/css/flexify.css', array(), GALAXIA_THEME_VERSION, 'all' );
-
 	wp_enqueue_style( 'galaxia-style', get_stylesheet_uri() );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

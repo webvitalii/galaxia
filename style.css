@@ -33,6 +33,425 @@ Theme features: responsive, clean, lite
 	margin-bottom: 30px;
 }
 
+/* ========== reset styles ========== */
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+iframe {
+	border: 0;
+}
+
+/* ========== typography ========== */
+
+b,
+strong {
+	font-weight: bold;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dl {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+dt,
+dd {
+	line-height: 1.5;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0;
+	margin-bottom: 8px;
+	margin-bottom: 15px;
+}
+
+blockquote {
+  margin: 0 0 15px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+/* ========== responsive ========== */
+
+embed,
+iframe,
+object,
+img,
+video,
+audio {
+	max-width: 100%;
+}
+
+/* ---------- nav - menu ---------- */
+
+.site-menu {
+	display: block;
+	width: 100%;
+	clear: both;
+	background: #e5e5e5;
+}
+
+.site-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-menu li {
+	display: inline-block;
+	position: relative;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-menu a {
+	color: #000;
+	padding: 12px 12px;
+	display: block;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.site-menu li a:hover {
+	color: #000;
+}
+
+.site-menu li a:hover, 
+.site-menu li a:focus,
+.site-menu li.current_page_item > a, 
+.site-menu li.current-page-item > a,
+.site-menu li.current_menu_item > a, 
+.site-menu li.current-menu-item > a,
+.site-menu li.current_page_ancestor > a, 
+.site-menu li.current-page-ancestor > a,
+.site-menu li.current_menu_ancestor > a, 
+.site-menu li.current-menu-ancestor > a {
+	/*background-color: #ddd;*/
+    text-decoration: none;
+}
+
+.site-menu ul li.page_item_has_children a,
+.site-menu ul li.menu-item-has-children a {
+	position: relative;
+}
+
+.site-menu ul li.page_item_has_children > a:after,
+.site-menu ul li.menu-item-has-children > a:after {
+	content: "";
+	position: absolute;
+	display: block;
+	right: 2px;
+	top: 50%;
+	margin-top: -2px;
+	opacity: 0.5;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent; /* magic arrow-triangle */
+	border-right: 4px solid transparent;
+	border-top: 4px solid #555;
+}
+
+/* ---------- nav - menu - level 2 ---------- */
+
+.site-menu ul ul {
+	background: #eee;
+	display: none;
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	left: -1px;
+	width: 250px;
+	z-index: 50;
+}
+
+.site-menu ul ul li {
+	width: 100%;
+	border-right: 0;
+}
+
+.site-menu ul li.page_item_has_children li.page_item_has_children > a:after,
+.site-menu ul li.menu-item-has-children li.menu-item-has-children > a:after {
+	content: "";
+	position: absolute;
+	display: block;
+	right: 2px;
+	top: 50%;
+	margin-top: -2px;
+	opacity: 0.5;
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent; /* magic arrow-triangle */
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #555;
+}
+
+.site-menu ul li:hover > ul {
+	display: block;
+}
+
+/* ---------- nav - menu - level 3+ ---------- */
+
+.site-menu ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+/* ---------- nav - menu - light ---------- */
+
+.site-menu-light {
+	background-color: transparent;
+	color: #333;
+}
+
+.site-menu-light a {
+	color: #333;
+}
+
+.site-menu-light li a:hover, 
+.site-menu-light li a:focus,
+.site-menu-light li.current_page_item > a, 
+.site-menu-light li.current-page-item > a,
+.site-menu-light li.current_menu_item > a, 
+.site-menu-light li.current-menu-item > a,
+.site-menu-light li.current_page_ancestor > a, 
+.site-menu-light li.current-page-ancestor > a,
+.site-menu-light li.current_menu_ancestor > a, 
+.site-menu-light li.current-menu-ancestor > a {
+	color: #111;
+	background-color: #ddd;
+}
+
+.site-menu-light ul ul {
+	background: #eee;
+	color: #333;
+}
+
+.site-menu-light ul li.page_item_has_children > a:after,
+.site-menu-light ul li.menu-item-has-children > a:after {
+	border-top: 4px solid #333;
+}
+
+/* ---------- nav - menu - dark ---------- */
+
+.site-menu-dark {
+	background-color: transparent;
+	color: #eee;
+}
+
+.site-menu-dark a {
+	color: #eee;
+}
+
+.site-menu-dark li a:hover, 
+.site-menu-dark li a:focus,
+.site-menu-dark li.current_page_item > a, 
+.site-menu-dark li.current-page-item > a,
+.site-menu-dark li.current_menu_item > a, 
+.site-menu-dark li.current-menu-item > a,
+.site-menu-dark li.current_page_ancestor > a, 
+.site-menu-dark li.current-page-ancestor > a,
+.site-menu-dark li.current_menu_ancestor > a, 
+.site-menu-dark li.current-menu-ancestor > a {
+	color: #fff;
+	background-color: #111;
+}
+
+.site-menu-dark ul ul {
+	background: #333;
+	color: #eee;
+}
+
+.site-menu-dark ul li.page_item_has_children > a:after,
+.site-menu-dark ul li.menu-item-has-children > a:after {
+	border-top: 4px solid #eee;
+}
+
+/* ========== forms - buttons ========== */
+
+/*button {
+	overflow: visible;
+	text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	display: inline-block;
+	cursor: pointer;
+	padding: 6px 12px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #333;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #eee;
+	background-image: linear-gradient(#fcfcfc, #eee);
+	border: 1px solid #d5d5d5;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+button:hover,
+button:active,
+[type="submit"]:hover,
+[type="submit"]:active,
+[type="button"]:hover,
+[type="button"]:active,
+[type="reset"]:hover,
+[type="reset"]:active {
+	text-decoration: none;*/
+	/*background-color: #ddd;
+	background-image: linear-gradient(#eee, #ddd);
+	border-color: #ccc;*/
+/*	-webkit-filter: brightness(85%);
+	filter: brightness(85%);
+	transition: all 0.3s ease;
+}
+*/
+
+/* ========== columns ========== */
+
+.columns {
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	column-gap: 30px;
+}
+
+.columns-1 {
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+}
+
+.columns-2 {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+.columns-3 {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+}
+
+.columns-4 {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+
+.columns-5 {
+	-webkit-column-count: 5;
+	-moz-column-count: 5;
+	column-count: 5;
+}
+
+.columns-6 {
+	-webkit-column-count: 6;
+	-moz-column-count: 6;
+	column-count: 6;
+}
+
+.columns-7 {
+	-webkit-column-count: 7;
+	-moz-column-count: 7;
+	column-count: 7;
+}
+
+.columns-8 {
+	-webkit-column-count: 8;
+	-moz-column-count: 8;
+	column-count: 8;
+}
+
+.columns .column {
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+	/* to fix the issue when bottom margin can go to the next column */
+	/* display: inline-block;
+	width: 100%; */
+}
+
+@media (max-width: 575px) {
+	.columns-1,
+	.columns-2,
+	.columns-3,
+	.columns-4,
+	.columns-5,
+	.columns-6,
+	.columns-7,
+	.columns-8 {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
