@@ -1,4 +1,6 @@
 to-do:
+
+* comments list styles
 * background image/color
 * header image
 * featured image
@@ -6,5 +8,6 @@ to-do:
 * footer widgets
 
 ==========
+
 future:
 * [option] load Bootstrap from CDN
