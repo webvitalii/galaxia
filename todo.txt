@@ -5,9 +5,15 @@ to-do:
 * header image
 * featured image
 * footer copyright
-* footer widgets
+* add proper tags
 
 ==========
 
 future:
 * [option] load Bootstrap from CDN
+
+==========
+
+maybe:
+* footer widgets
+* WooCommerce support

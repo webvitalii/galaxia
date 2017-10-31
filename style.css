@@ -133,10 +133,14 @@ h6 {
 
 /* ========== responsive ========== */
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 embed,
 iframe,
 object,
-img,
 video,
 audio {
 	max-width: 100%;
