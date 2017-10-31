@@ -452,6 +452,70 @@ button:active,
 	}
 }
 
+/* ========== comments ========== */
+.comment-meta {
+	color: #343434;
+	font-size: 14px;
+}
+.comment-meta .comment-meta-item {
+	margin-right: 20px;
+}
+.comment-meta a {
+	color: #343434;
+}
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.comment-list .comment-author {
+	position: relative;
+}
+
+#comment-form-elements {
+	list-style-type: none;
+	margin: 0;
+}
+
+.comment-list li.comment {
+	position: relative;
+	background: #fff;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	padding: 19px 0 0 19px;
+	margin-bottom: 20px;
+}
+
+.comment-list li.bypostauthor {
+	background-color: #f2f7fc;
+}
+
+.comment-reply-link {
+	color: #808080;
+}
+
+.comment-list .comment-avatar {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.comment-list .comment-avatar img {
+	border: 0;
+	padding: 0;
+}
+.comment-list .comment-avatar img:hover {
+	border: 0;
+	padding: 0;
+}
+.comment-list {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.comment-list .children {
+	list-style-type: none;
+	margin: 0 0 0 20px;
+	padding-left: 0;
+}
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
