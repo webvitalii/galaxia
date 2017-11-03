@@ -59,9 +59,6 @@ if ( ! function_exists( 'galaxia_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
-		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
-
 		/**
 		 * Add support for core custom logo.
 		 *
@@ -98,6 +95,16 @@ function galaxia_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'galaxia' ),
 		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'galaxia' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer', 'galaxia' ),
+		'id'            => 'footer-1',
 		'description'   => esc_html__( 'Add widgets here.', 'galaxia' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',

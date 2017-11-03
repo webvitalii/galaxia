@@ -13,7 +13,14 @@ A starter theme called Galaxia.
 
 == Description ==
 
-Responsive and clean WordPress theme
+Responsive and clean WordPress theme.
+
+* Responsive, clean and light
+* Multi-level drop down menu
+* Widget-ready 2 sidebars and footer areas
+* Custom page template: "Redirect to first subpage"
+* Search Engines Friendly
+* User friendly - All elements are intuitive and users will use the site more easily
 
 == Installation ==
 

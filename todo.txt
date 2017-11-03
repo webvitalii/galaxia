@@ -1,15 +1,18 @@
 to-do:
 
-* comments list styles
-* background image/color
-* header image
+* sticky post
 * featured image
-* footer copyright
 * add proper tags
+* create screenshot.png
+* responsive menu
 
 ==========
 
 future:
+* background image/color
+* header image
+* Add support for custom logo
+* Add wide template (without sidebar)
 * [option] load Bootstrap from CDN
 
 ==========
