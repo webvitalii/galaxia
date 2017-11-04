@@ -3,8 +3,6 @@ to-do:
 * sticky post
 * featured image
 * add proper tags
-* create screenshot.png
-* responsive menu
 
 ==========
 
@@ -13,10 +11,10 @@ future:
 * header image
 * Add support for custom logo
 * Add wide template (without sidebar)
-* [option] load Bootstrap from CDN
+* responsive menu
 
 ==========
 
 maybe:
-* footer widgets
+* [option] load Bootstrap from CDN
 * WooCommerce support

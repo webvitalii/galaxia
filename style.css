@@ -1,10 +1,10 @@
 /*
 Theme Name: Galaxia
-Theme URI: http://underscores.me/
+Theme URI: http://codecraft.universio.net/
 Author: webvitaly
 Author URI: http://codecraft.universio.net/
 Description: Responsive and clean WordPress theme
-Version: 0.1
+Version: 0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: galaxia
@@ -12,7 +12,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 */
 
 /*
-Theme features: responsive, clean, lite
+Theme features: responsive, clean, light
 */
 
 .site-container {
@@ -204,9 +204,9 @@ audio {
 	content: "";
 	position: absolute;
 	display: block;
-	right: 2px;
-	top: 50%;
-	margin-top: -2px;
+	left: 50%;
+	bottom: 6px;
+	margin-left: -4px;
 	opacity: 0.5;
 	width: 0;
 	height: 0;
@@ -239,7 +239,9 @@ audio {
 	position: absolute;
 	display: block;
 	right: 2px;
+	left: auto;
 	top: 50%;
+	bottom: auto;
 	margin-top: -2px;
 	opacity: 0.5;
 	width: 0;

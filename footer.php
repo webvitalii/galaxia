@@ -4,8 +4,7 @@
             <div class="site-footer-widgets col-sm-9">
 	            <?php //dynamic_sidebar( 'footer-1' ); ?>
 	            <?php if ( ! dynamic_sidebar( 'footer-1' ) ) : // footer widgetized area ?>
-                    <p>Copyright
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                    <p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 		                <?php echo date('Y'); ?></p>
                 <?php endif; // end of the widgetized area ?>
             </div>

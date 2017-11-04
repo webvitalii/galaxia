@@ -1,19 +1,19 @@
 === Galaxia ===
 
-Contributors: automattic
+Contributors: webvitaly
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.0
-Tested up to: 4.8
-Stable tag: 1.0.0
+Tested up to: 4.9
+Stable tag: 0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Galaxia.
+Responsive, clean and light WordPress theme.
 
 == Description ==
 
-Responsive and clean WordPress theme.
+Features:
 
 * Responsive, clean and light
 * Multi-level drop down menu
@@ -30,16 +30,15 @@ Responsive and clean WordPress theme.
 
 == Frequently Asked Questions ==
 
-= Does this theme support any plugins? =
+= Does this theme incopatible with any plugins? =
 
-Galaxia includes support for Infinite Scroll in Jetpack.
+Galaxia includes support for every plugin so far.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 0.1 - 4 Nov 2017 =
 * Initial release
 
 == Credits ==
 
-* Based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* Bootstrap https://getbootstrap.com/ [MIT License]
