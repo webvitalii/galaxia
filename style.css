@@ -2,17 +2,18 @@
 Theme Name: Galaxia
 Theme URI: http://codecraft.universio.net/
 Author: webvitaly
-Author URI: http://codecraft.universio.net/
+Author URI: http://universio.net/
 Description: Responsive and clean WordPress theme
 Version: 0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: galaxia
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: one-column, two-columns, right-sidebar, custom-menu, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog, education, news
 */
 
 /*
 Theme features: responsive, clean, light
+Theme tags URL: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
 */
 
 .site-container {
