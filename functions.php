@@ -1,5 +1,5 @@
 <?php
-define('GALAXIA_THEME_VERSION', '0.1');
+define('GALAXIA_THEME_VERSION', '0.2');
 
 if ( ! function_exists( 'galaxia_setup' ) ) :
 	/**
@@ -74,6 +74,7 @@ if ( ! function_exists( 'galaxia_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'galaxia_setup' );
 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -86,16 +87,12 @@ function galaxia_content_width() {
 }
 add_action( 'after_setup_theme', 'galaxia_content_width', 0 );
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
+
 function galaxia_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'galaxia' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'galaxia' ),
+		'description'   => esc_html__( 'Add sidebar widgets here.', 'galaxia' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h4 class="widget-title">',
@@ -105,7 +102,7 @@ function galaxia_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer', 'galaxia' ),
 		'id'            => 'footer-1',
-		'description'   => esc_html__( 'Add widgets here.', 'galaxia' ),
+		'description'   => esc_html__( 'Add footer widgets here.', 'galaxia' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h4 class="widget-title">',
@@ -114,9 +111,7 @@ function galaxia_widgets_init() {
 }
 add_action( 'widgets_init', 'galaxia_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
+
 function galaxia_scripts() {
 
 	wp_enqueue_style( 'galaxia-bootstrap-style', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css', array(), GALAXIA_THEME_VERSION, 'all' );
@@ -129,12 +124,7 @@ function galaxia_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'galaxia_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
+
 require get_template_directory() . '/inc/custom-header.php';
 
-/**
- * Custom template tags for this theme.
- */
 require get_template_directory() . '/inc/template-tags.php';
