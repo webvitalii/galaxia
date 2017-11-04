@@ -20,7 +20,9 @@ maybe:
 * [option] load Bootstrap from CDN
 * WooCommerce support
 * buddypress tag: https://codex.buddypress.org/theme-compatibility/
-* other tags from here: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
 * featured-image-header	tag: Outputs a featured image, via add_theme_support( 'post-thumbnails' ), in place of the custom header image via add_theme_support( 'custom-header' ), on single-post view.
 * post-formats tag: Support a post formats with clear visual distinction, use add_theme_support( 'post-formats' )
 * theme-options tag: Has theme options.
+* other tags from here: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
+
+

@@ -18,7 +18,13 @@ if ( post_password_required() ) {
 			<?php
 			$comment_count = get_comments_number();
 			printf(
-				esc_html( _nx( '%1$s comment', '%1$s comments', $comment_count, 'galaxia' ) ),
+				_nx(
+					'%1$s thought',
+					'%1$s thoughts',
+					$comment_count,
+					'comments title',
+					'galaxia'
+				),
 				number_format_i18n( $comment_count )
 			);
 			?>
