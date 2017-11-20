@@ -1,10 +1,9 @@
 to-do:
 
-* sticky post
 * featured-images tag: Support feature images on post in blog, use add_theme_support( 'post-thumbnails' )
-* add proper tags
-* custom-background tag: add_theme_support( 'custom-background' );
 * custom-header tag: add_theme_support( 'custom-header' );
+* sticky-post tag: Visually distinctive style for sticky posts.
+* create a theme URL
 
 ==========
 
@@ -12,7 +11,7 @@ future:
 * custom-logo tag: add_theme_support( 'custom-logo' );
 * responsive menu
 * accessibility-ready tag: https://make.wordpress.org/themes/handbook/review/accessibility/
-* sticky-post tag: Visually distinctive style for sticky posts.
+* add proper tags: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
 
 ==========
 
@@ -24,5 +23,5 @@ maybe:
 * post-formats tag: Support a post formats with clear visual distinction, use add_theme_support( 'post-formats' )
 * theme-options tag: Has theme options.
 * other tags from here: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
-
+* recommend plugins via https://make.wordpress.org/themes/handbook/review/required/#screenshot
 

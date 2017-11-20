@@ -3,12 +3,12 @@ Theme Name: Galaxia
 Theme URI: http://codecraft.universio.net/
 Author: webvitaly
 Author URI: http://universio.net/
-Description: Responsive and clean WordPress theme
+Description: Responsive, clean and light WordPress theme
 Version: 0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: galaxia
-Tags: one-column, two-columns, right-sidebar, custom-menu, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog, education, news
+Tags: one-column, two-columns, right-sidebar, custom-background, custom-menu, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog, education, news
 */
 
 /*
@@ -16,12 +16,16 @@ Theme features: responsive, clean, light
 Theme tags URL: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
 */
 
+/* ========== site structure ========== */
+
 .site-container {
 	max-width: 1200px;
+	background-color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .site-header {
-	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
@@ -31,7 +35,6 @@ Theme tags URL: https://make.wordpress.org/themes/handbook/review/required/theme
 
 .site-footer {
 	margin-top: 30px;
-	margin-bottom: 30px;
 }
 
 /* ========== reset styles ========== */

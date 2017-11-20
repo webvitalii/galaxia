@@ -2,7 +2,6 @@
 
 Contributors: webvitaly
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
 Requires at least: 4.0
 Tested up to: 4.9
 Stable tag: 0.2
@@ -15,10 +14,11 @@ Responsive, clean and light WordPress theme.
 
 Features:
 
-* Responsive, clean and light
+* Responsive, clean and light theme
 * Multi-level drop down menu
 * Widget-ready 2 sidebars and footer areas
-* Custom page template: "Redirect to first subpage"
+* 2 custom page template: "Full width" and "Redirect to first subpage"
+* Support for: one-column, two-columns, right-sidebar, custom-menu, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog, education, news
 * Search Engines Friendly
 * User friendly - All elements are intuitive and users will use the site more easily
 

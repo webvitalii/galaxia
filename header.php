@@ -9,7 +9,7 @@
 </head>
 
 <body <?php body_class(''); ?>>
-<div id="page" class="site">
+<div id="page" class="site-wrap">
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'galaxia' ); ?></a>
 <div class="container-fluid site-container">
 
