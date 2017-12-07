@@ -3,8 +3,8 @@
 Contributors: webvitaly
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 0.2
+Tested up to: 4.9.1
+Stable tag: 0.3
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -36,7 +36,7 @@ Galaxia includes support for every plugin so far.
 
 == Changelog ==
 
-= 0.1 - 4 Nov 2017 =
+= 0.1 - 7 Dec 2017 =
 * Initial release
 
 == Credits ==

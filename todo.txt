@@ -1,9 +1,9 @@
 to-do:
 
-* featured-images tag: Support feature images on post in blog, use add_theme_support( 'post-thumbnails' )
+* add thubnail images for lists
 * custom-header tag: add_theme_support( 'custom-header' );
 * sticky-post tag: Visually distinctive style for sticky posts.
-* create a theme URL
+* create a website and update the theme URL
 
 ==========
 
@@ -17,7 +17,7 @@ future:
 
 maybe:
 * [option] load Bootstrap from CDN
-* WooCommerce support
+* WooCommerce support; add_theme_support( 'woocommerce' );
 * buddypress tag: https://codex.buddypress.org/theme-compatibility/
 * featured-image-header	tag: Outputs a featured image, via add_theme_support( 'post-thumbnails' ), in place of the custom header image via add_theme_support( 'custom-header' ), on single-post view.
 * post-formats tag: Support a post formats with clear visual distinction, use add_theme_support( 'post-formats' )
