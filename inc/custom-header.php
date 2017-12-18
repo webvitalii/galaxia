@@ -17,14 +17,17 @@
  * @uses galaxia_header_style()
  */
 function galaxia_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'galaxia_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
-		'wp-head-callback'       => 'galaxia_header_style',
-	) ) );
+	add_theme_support( 'custom-header', apply_filters( 'galaxia_custom_header_args',
+		array(
+			'default-image' => '',
+			'default-text-color' => '000000',
+			'width' => 1200,
+			'height' => 250,
+			'flex-width' => true,
+			'flex-height' => true,
+			'wp-head-callback' => 'galaxia_header_style',
+		)
+	) );
 }
 add_action( 'after_setup_theme', 'galaxia_custom_header_setup' );
 

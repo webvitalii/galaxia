@@ -1,7 +1,8 @@
 to-do:
 
-* add thubnail images for lists
 * custom-header tag: add_theme_support( 'custom-header' );
+* update cols from sm to md
+* add thubnail images for lists
 * sticky-post tag: Visually distinctive style for sticky posts.
 * create a website and update the theme URL
 
