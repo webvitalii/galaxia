@@ -1,7 +1,7 @@
 === Galaxia ===
 
 Contributors: webvitaly
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog, education, news
 Requires at least: 4.0
 Tested up to: 4.9.1
 Stable tag: 0.3

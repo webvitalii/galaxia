@@ -1,10 +1,7 @@
 to-do:
 
-* custom-header tag: add_theme_support( 'custom-header' );
-* update cols from sm to md
-* add thubnail images for lists
+* add thumbnail images for lists
 * sticky-post tag: Visually distinctive style for sticky posts.
-* create a website and update the theme URL
 
 ==========
 
@@ -13,6 +10,7 @@ future:
 * responsive menu
 * accessibility-ready tag: https://make.wordpress.org/themes/handbook/review/accessibility/
 * add proper tags: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
+* update cols from sm to md
 
 ==========
 

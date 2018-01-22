@@ -1,5 +1,5 @@
 <?php
-define('GALAXIA_THEME_VERSION', '0.3');
+define('GALAXIA_THEME_VERSION', '0.4');
 
 if ( ! function_exists( 'galaxia_setup' ) ) :
 	/**
