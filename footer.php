@@ -1,4 +1,6 @@
-
+<?php
+$galaxia_theme = wp_get_theme();
+?>
 	<footer id="colophon" class="site-footer">
 		<div class="row">
             <div class="site-footer-widgets col-sm-9">
@@ -10,9 +12,9 @@
             </div>
             <div class="site-footer-info col-sm-3">
 	            <?php _e( 'Powered by', 'galaxia' ); ?>
-                <a href="http://wordpress.org/" title="<?php _e( 'WordPress CMS', 'galaxia' ); ?>" target="_blank"><?php _e( 'WordPress', 'galaxia' ); ?></a>
+                <a href="http://wordpress.org/" title="<?php echo esc_attr( __( 'WordPress CMS', 'galaxia' ) ); ?>" target="_blank"><?php _e( 'WordPress', 'galaxia' ); ?></a>
 	            <?php _e( '&', 'galaxia' ); ?>
-                <a href="http://evolvingideas.universio.net/themes/galaxia/" title="<?php _e( 'Galaxia WordPress theme', 'galaxia' ); ?>" target="_blank"><?php _e( 'Galaxia', 'galaxia' ); ?></a>
+                <a href="<?php echo $galaxia_theme->get('ThemeURI'); ?>" title="<?php echo esc_attr( __( 'Galaxia WordPress theme', 'galaxia' ) ); ?>" target="_blank"><?php _e( 'Galaxia', 'galaxia' ); ?></a>
             </div>
         </div>
 	</footer><!-- #colophon .site-footer -->

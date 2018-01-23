@@ -1,5 +1,6 @@
 <?php
-define('GALAXIA_THEME_VERSION', '0.4');
+$galaxia_theme = wp_get_theme();
+define('GALAXIA_THEME_VERSION', $galaxia_theme->get('Version'));
 
 if ( ! function_exists( 'galaxia_setup' ) ) :
 	/**
@@ -11,7 +12,7 @@ if ( ! function_exists( 'galaxia_setup' ) ) :
 	 */
 	function galaxia_setup() {
 
-		load_theme_textdomain( 'galaxia', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'galaxia' );
 
 		add_theme_support( 'automatic-feed-links' );
 
@@ -94,7 +95,7 @@ function galaxia_scripts() {
 
 	wp_enqueue_style( 'galaxia-bootstrap-style', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css', array(), GALAXIA_THEME_VERSION, 'all' );
 
-	wp_enqueue_style( 'galaxia-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'galaxia-style', get_stylesheet_uri(), array(), GALAXIA_THEME_VERSION, 'all' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
