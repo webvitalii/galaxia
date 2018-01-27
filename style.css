@@ -3,22 +3,18 @@ Theme Name: Galaxia
 Theme URI: http://vitality.universio.net/themes/galaxia/
 Author: webvitaly
 Author URI: http://vitality.universio.net/
-Description: Responsive, clean and light WordPress theme
-Version: 0.5
+Description: Responsive, clean, light and fast WordPress theme.
+Version: 0.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: galaxia
-Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog, education, news
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog
 */
 
-/*
-Theme features: responsive, clean, light
-Theme tags URL: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
-*/
 
 /* ========== site structure ========== */
 
-.site-container {
+.galaxia-container {
 	max-width: 1200px;
 	background-color: #fff;
 	padding-top: 15px;
@@ -27,19 +23,27 @@ Theme tags URL: https://make.wordpress.org/themes/handbook/review/required/theme
 
 /* ========== site header ========== */
 
-.site-header {
+.galaxia-header {
 	margin-bottom: 30px;
 }
 
-.site-branding {
+.galaxia-header__branding {
 	margin-bottom: 30px;
 }
 
-.site-header-image {
+.galaxia-header__logo {
+	margin-right: 15px;
+}
+
+.galaxia-header__logo-image {
+	max-width: 100px;
+}
+
+.galaxia-header__image {
 	text-align: center;
 }
 
-.site-footer {
+.galaxia-footer {
 	margin-top: 30px;
 }
 
@@ -732,12 +736,12 @@ button:active,
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
-.site-header:before,
-.site-header:after,
+.galaxia-header:before,
+.galaxia-header:after,
 .site-content:before,
 .site-content:after,
-.site-footer:before,
-.site-footer:after {
+.galaxia-footer:before,
+.galaxia-footer:after {
 	content: "";
 	display: table;
 	table-layout: fixed;
@@ -746,9 +750,9 @@ button:active,
 .clear:after,
 .entry-content:after,
 .comment-content:after,
-.site-header:after,
+.galaxia-header:after,
 .site-content:after,
-.site-footer:after {
+.galaxia-footer:after {
 	clear: both;
 }
 
@@ -809,12 +813,12 @@ button:active,
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+.infinite-scroll.neverending .galaxia-footer { /* Theme Footer (when set to scrolling) */
 	display: none;
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
+.infinity-end.neverending .galaxia-footer {
 	display: block;
 }
 

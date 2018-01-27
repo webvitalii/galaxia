@@ -55,8 +55,8 @@ if ( ! function_exists( 'galaxia_header_style' ) ) :
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
 		?>
-			.site-title,
-			.site-description {
+			.galaxia-header__title,
+			.galaxia-header__description {
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
 			}
@@ -64,8 +64,8 @@ if ( ! function_exists( 'galaxia_header_style' ) ) :
 			// If the user has set a custom color for the text use that.
 			else :
 		?>
-			.site-title a,
-			.site-description {
+			.galaxia-header__title a,
+			.galaxia-header__description {
 				color: #<?php echo esc_attr( $header_text_color ); ?>;
 			}
 		<?php endif; ?>

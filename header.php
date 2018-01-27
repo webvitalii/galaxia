@@ -9,12 +9,12 @@
 </head>
 
 <body <?php body_class(''); ?>>
-<div id="page" class="site-wrap">
+<div id="page" class="galaxia-wrap">
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'galaxia' ); ?></a>
-<div class="container-fluid site-container">
+<div class="container-fluid galaxia-container">
 
-    <header id="masthead" class="site-header">
+    <header id="masthead" class="galaxia-header">
 <?php get_template_part( 'template-parts/header', 'branding' ); ?>
 <?php get_template_part( 'template-parts/header', 'navigation' ); ?>
 <?php get_template_part( 'template-parts/header', 'image' ); ?>
-    </header><!-- #masthead .site-header -->
+    </header><!-- #masthead .galaxia-header -->

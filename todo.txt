@@ -6,7 +6,6 @@ to-do:
 ==========
 
 future:
-* custom-logo tag: add_theme_support( 'custom-logo' );
 * responsive menu
 * accessibility-ready tag: https://make.wordpress.org/themes/handbook/review/accessibility/
 * add proper tags: https://make.wordpress.org/themes/handbook/review/required/theme-tags/
