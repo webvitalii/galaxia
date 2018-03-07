@@ -30,6 +30,15 @@ Features:
 
 == Frequently Asked Questions ==
 
+= Which browsers are supported? =
+
+* Chrome/Desktop - latest 2 versions
+* Firefox/Desktop - latest 2 versions
+* Edge - latest version
+* IE10, IE11
+* Chrome/Android - latest 2 versions
+* Safari/iOS - latest 2 versions
+
 = Does this theme incompatible with any plugins? =
 
 No plugins in this list so far.

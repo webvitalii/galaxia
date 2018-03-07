@@ -1,5 +1,8 @@
 to-do:
 
+* use svg icons
+* remove Bootstrap css. Include grid and reboot styles. Create custom input styles.
+* fix meta (add space: Posted in UncategorizedTagged boat, lake)
 * add thumbnail images for lists
 * sticky-post tag: Visually distinctive style for sticky posts.
 
