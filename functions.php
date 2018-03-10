@@ -99,6 +99,16 @@ function galaxia_scripts() {
 add_action( 'wp_enqueue_scripts', 'galaxia_scripts' );
 
 
+function galaxia_update_styles( $html, $handle, $href, $media ){
+    $handles = array('galaxia-style');
+    if( in_array( $handle, $handles ) ){
+        $html = str_replace(' href=', ' async href=', $html);   
+    }
+    return $html;
+}
+add_filter( 'style_loader_tag',  'galaxia_update_styles', 10, 4 );
+
+
 require get_template_directory() . '/inc/custom-header.php';
 
 require get_template_directory() . '/inc/template-tags.php';
