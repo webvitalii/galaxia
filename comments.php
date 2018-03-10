@@ -56,18 +56,18 @@ if ( post_password_required() ) {
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 	$html_req = ( $req ? " required='required'" : '' );
 	$comment_form_fields = array(
-		'author' => '<div class="form-group row comment-form-author">' . '<label class="col-md-3 col-form-label text-md-right" for="author">' . __( 'Name', 'galaxia' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-		            '<div class="col-md-9"><input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $aria_req . $html_req . ' /></div></div>',
-		'email'  => '<div class="form-group row comment-form-email"><label class="col-md-3 col-form-label text-md-right" for="email">' . __( 'Email', 'galaxia' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
-		            '<div class="col-md-9"><input class="form-control" id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $aria_req . $html_req  . ' /></div></div>',
-		'url'    => '<div class="form-group row comment-form-url"><label class="col-md-3 col-form-label text-md-right" for="url">' . __( 'Website', 'galaxia' ) . '</label> ' .
-		            '<div class="col-md-9"><input class="form-control" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" maxlength="200" /></div></div>',
+		'author' => '<div class="galaxia-comments-form__row row">' . '<label class="col-md-3 galaxia-comments-form__label" for="author">' . __( 'Name', 'galaxia' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+		            '<div class="col-md-9"><input class="galaxia-input" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $aria_req . $html_req . ' /></div></div>',
+		'email'  => '<div class="galaxia-comments-form__row row"><label class="col-md-3 galaxia-comments-form__label" for="email">' . __( 'Email', 'galaxia' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+		            '<div class="col-md-9"><input class="galaxia-input" id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $aria_req . $html_req  . ' /></div></div>',
+		'url'    => '<div class="galaxia-comments-form__row row"><label class="col-md-3 galaxia-comments-form__label" for="url">' . __( 'Website', 'galaxia' ) . '</label> ' .
+		            '<div class="col-md-9"><input class="galaxia-input" id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" maxlength="200" /></div></div>',
 	);
 	$comment_form_params = array(
 		'fields' => $comment_form_fields,
-		'comment_field' => '<div class="form-group row comment-form-comment"><label class="col-md-3 col-form-label text-md-right" for="comment">' . _x( 'Comment', 'noun', 'galaxia' ) . '</label><div class="col-md-9"><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></div></div>',
-		'class_submit' => 'submit btn btn-secondary',
-		'submit_field' => '<div class="form-group row form-submit"><div class="col-md-3"></div><div class="col-md-9">%1$s %2$s</div></div>',
+		'comment_field' => '<div class="galaxia-comments-form__row row"><label class="col-md-3 galaxia-comments-form__label" for="comment">' . _x( 'Comment', 'noun', 'galaxia' ) . '</label><div class="col-md-9"><textarea class="galaxia-textarea" id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></div></div>',
+		'class_submit' => 'galaxia-button',
+		'submit_field' => '<div class="galaxia-comments-form__row row"><div class="col-md-3"></div><div class="col-md-9">%1$s %2$s</div></div>',
 	);
 	comment_form($comment_form_params);
 	?>

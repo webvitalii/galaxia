@@ -1,10 +1,10 @@
 === Galaxia ===
 
 Contributors: webvitaly
-Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog, education, news
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, microformats, rtl-language-support, threaded-comments, translation-ready, blog
 Requires at least: 4.0
-Tested up to: 4.9.2
-Stable tag: 0.6
+Tested up to: 5.0
+Stable tag: 0.7
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -63,6 +63,12 @@ Galaxia Theme bundles the following third-party resources:
 * Bootstrap https://getbootstrap.com/ [MIT License]
 
 == Changelog ==
+
+= 0.7 =
+* Removed Bootstrap
+* Added Bootstrap Reboot and Bootstrap Grid (without offset, order and visibility classes)
+* Added icons via SVG/CSS approach 
+* Cleaned up CSS
 
 = 0.6 - 27 Jan 2018 =
 * Minor updates after second review
